@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about our marketing agency's story, values, and expert team.">
+    <title>About Us - Marketing Pro</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-primary">Marketing Pro</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="seo-marketing.html" class="nav-link">SEO Marketing</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="seo-marketing.html" class="nav-link">SEO Marketing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] bg-gray-900">
+        <div class="absolute inset-0 overflow-hidden bg-primary opacity-60"></div>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="text-white max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
+                <p class="text-xl mb-8">We're passionate about helping businesses succeed in the digital world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                <p class="text-gray-600 mb-8">Founded in 2015, Marketing Pro has grown from a small team of digital enthusiasts to a full-service marketing agency. Our journey has been driven by a single mission: to help businesses thrive in the digital age through innovative marketing solutions.</p>
+                <p class="text-gray-600">Today, we're proud to have helped hundreds of businesses achieve their marketing goals and establish strong online presences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Excellence</h3>
+                    <p class="text-gray-600">We strive for excellence in everything we do, delivering results that exceed expectations.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                    <p class="text-gray-600">We embrace new technologies and strategies to keep our clients ahead of the curve.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.616a1 1 0 01.894-1.79l1.599.8L9 4.323V3a1 1 0 011-1zm-5 8.274l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L5 10.274zm10 0l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L15 10.274z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Integrity</h3>
+                    <p class="text-gray-600">We maintain the highest standards of honesty and transparency in all our dealings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-2">John Smith</h3>
+                    <p class="text-gray-600 mb-2">CEO & Founder</p>
+                    <p class="text-gray-600">15+ years of digital marketing expertise</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-2">Sarah Johnson</h3>
+                    <p class="text-gray-600 mb-2">Head of Strategy</p>
+                    <p class="text-gray-600">Expert in SEO and content strategy</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                    <h3 class="text-xl font-semibold mb-2">Michael Chen</h3>
+                    <p class="text-gray-600 mb-2">Technical Director</p>
+                    <p class="text-gray-600">Specialist in technical SEO and analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-gray-200 mb-8 max-w-2xl mx-auto">Partner with us to achieve your digital marketing goals.</p>
+            <a href="services.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300">View Our Services</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Marketing Pro</h3>
+                    <p class="text-gray-400">Your partner in digital marketing success.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="seo-marketing.html" class="text-gray-400 hover:text-white">SEO Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@marketingpro.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Marketing Ave, Business City</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-primary">
+                        <button type="submit" class="btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Marketing Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

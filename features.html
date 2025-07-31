@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our powerful marketing features designed to boost your business growth and online presence.">
+    <title>Features - Marketing Pro</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-primary">Marketing Pro</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="seo-marketing.html" class="nav-link">SEO Marketing</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="seo-marketing.html" class="nav-link">SEO Marketing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] bg-gray-900">
+        <div class="absolute inset-0 overflow-hidden bg-primary opacity-60"></div>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="text-white max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Features</h1>
+                <p class="text-xl mb-8">Powerful tools and strategies to elevate your digital presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Analytics & Reporting -->
+                <div class="card p-6">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Analytics & Reporting</h3>
+                    <p class="text-gray-600">Comprehensive analytics and reporting tools to track your marketing performance and ROI.</p>
+                </div>
+
+                <!-- Automation Tools -->
+                <div class="card p-6">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 7H7v6h6V7z"></path>
+                            <path fill-rule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Automation Tools</h3>
+                    <p class="text-gray-600">Streamline your marketing workflows with powerful automation capabilities.</p>
+                </div>
+
+                <!-- Content Management -->
+                <div class="card p-6">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Content Management</h3>
+                    <p class="text-gray-600">Easy-to-use content management system for creating and organizing your marketing materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Details -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose Our Features?</h2>
+                
+                <!-- Feature 1 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4">Data-Driven Insights</h3>
+                    <p class="text-gray-600 mb-4">Our analytics tools provide deep insights into your marketing performance, helping you make informed decisions and optimize your strategies for better results.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Real-time performance tracking</li>
+                        <li>Custom report generation</li>
+                        <li>Competitor analysis tools</li>
+                        <li>ROI measurement</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4">Smart Automation</h3>
+                    <p class="text-gray-600 mb-4">Save time and improve efficiency with our intelligent automation tools that handle repetitive tasks while maintaining personalization.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Email marketing automation</li>
+                        <li>Social media scheduling</li>
+                        <li>Lead nurturing workflows</li>
+                        <li>Campaign management</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Content Excellence</h3>
+                    <p class="text-gray-600 mb-4">Create, manage, and optimize your content with our comprehensive content management features.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>SEO-optimized content creation</li>
+                        <li>Multi-channel content distribution</li>
+                        <li>Content performance analytics</li>
+                        <li>Asset management system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+            <p class="text-gray-200 mb-8 max-w-2xl mx-auto">Experience the power of our marketing features and take your business to the next level.</p>
+            <a href="services.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Marketing Pro</h3>
+                    <p class="text-gray-400">Your partner in digital marketing success.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="seo-marketing.html" class="text-gray-400 hover:text-white">SEO Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@marketingpro.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Marketing Ave, Business City</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-primary">
+                        <button type="submit" class="btn-primary w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Marketing Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
